@@ -3,13 +3,6 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-int min(int n1 , int n2){
-    if(n1 > n2){
-        return n2;
-    }else{
-        return n1;
-    }
-}
 
 bool isValuePresentAsIndex(int arr[], int n ,int value) {
     for (int i = 0; i < n; i++) {
@@ -19,6 +12,9 @@ bool isValuePresentAsIndex(int arr[], int n ,int value) {
     }
     return false;
 }
+int mini(int n1 , int n2){
+    return n1 > n2 ? n2 : n1;
+}
 
 int main(){
     int max_int = INT_MAX;
@@ -27,7 +23,7 @@ int main(){
     int len = sizeof(arr) / sizeof(arr[0]);
     for(int i = 0 ; i < len ; i++){
         diff = abs(arr[i]);
-        max_int = min(max_int , diff);
+        max_int = mini(max_int , diff);
 
     }
     if(isValuePresentAsIndex(arr , len , max_int)){
@@ -37,3 +33,5 @@ int main(){
     }
     return 0;
 }
+
+
