@@ -1,5 +1,4 @@
 #include<stdio.h>
- 
 int linearscearch(int arr[],int l,int key); 
 void checkresult(int r); 
 int main(){ 
