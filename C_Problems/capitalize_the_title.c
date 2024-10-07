@@ -42,6 +42,5 @@ char* capitalizeTitle(char* title) {
             strcat(updated_title, " ");
         }
     }
-
     return updated_title;
 }
