@@ -1,5 +1,5 @@
 {
     "pieces.cloudCapabilities": "Blended",
     "pieces.telemetry": true,
-    "C_Cpp.errorSquiggles": "disabled"
+    "C_Cpp.errorSquiggles": "enabled"
 }
